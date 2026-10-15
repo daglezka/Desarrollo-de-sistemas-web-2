@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Sara - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Tienda Sara</a>
+            <form class="d-flex w-50">
+                <input class="form-control me-2" type="search" placeholder="Busca productos como Televisor, iPhone..." aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+            <a href="carrito.html" class="btn btn-warning text-dark fw-bold">🛒 Carrito</a>
+        </div>
+    </nav>
+
+    <!-- Carrusel / Banner Principal -->
+    <div id="mainCarousel" class="carousel slide my-3 container" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow">
+            <div class="carousel-item active">
+                <div class="bg-primary text-white p-5 text-center">
+                    <h1>¡Hasta 30% de descuento en Electrónica!</h1>
+                    <p>Aprovecha las rebajas en pantallas y dispositivos Sony y Samsung.</p>
+                    <a href="galeria.html" class="btn btn-light text-primary fw-bold">Explora la colección</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categorías Principales (Basado en nuestra BD) -->
+    <div class="container my-5">
+        <h2 class="mb-4">Categorías Principales</h2>
+        <div class="row text-center">
+            <div class="col-md-3 mb-3"><div class="p-4 border rounded shadow-sm bg-light">📱 Electrónica</div></div>
+            <div class="col-md-3 mb-3"><div class="p-4 border rounded shadow-sm bg-light">🏠 Hogar</div></div>
+            <div class="col-md-3 mb-3"><div class="p-4 border rounded shadow-sm bg-light">⚽ Deportes</div></div>
+            <div class="col-md-3 mb-3"><div class="p-4 border rounded shadow-sm bg-light">📚 Libros</div></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
