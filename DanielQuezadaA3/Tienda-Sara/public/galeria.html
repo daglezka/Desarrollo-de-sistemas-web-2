@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+     <center> <a href="index.html">
+        <img src="img/logo3.png" alt="Tienda SARA" width="150">
+    </a> </center>
+</head>
+<body>
+            
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Tienda SARA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">OFERTAS</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CATEGORIAS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="galeria.html">ELECTRONICA</a></li>
+            <li><a class="dropdown-item" href="#">JOYERIA</a></li>
+            <li><a class="dropdown-item" href="#">ZAPATERIA</a></li>
+            <li><a class="dropdown-item" href="#">LINEA BLANCA</a></li>
+            <li><a class="dropdown-item" href="#">ROPA</a></li>
+            <li><a class="dropdown-item" href="#">LLANTAS</a></li>
+          </ul>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="carrito.html">CARRITO</a>
+        </li>
+      
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  
+<div class="container my-5">
+  <div class="row">
+    <aside class="col-lg-3 d-none d-lg-block">
+      <h5 class="mb-3">Filtros</h5>
+      <div class="mb-4">
+        <h6>Categoría</h6>
+        <select class="form-select mb-2">
+          <option>ELECTRONICA</option>
+          <option>JOYERIA</option>
+          <option>ZAPATERIA</option>
+          <option>LINEA BLANCA</option>
+          <option>ROPA</option>
+          <option>LLANTAS</option>
+        </select>
+      </div>
+      <div class="mb-4">
+        <h6>Precio (Rango)</h6>
+        <input type="range" class="form-range" min="0" max="5000">
+      </div>
+      <div class="mb-4">
+        <h6>Color</h6>
+        <div class="d-flex gap-2">
+          <div style="width:20px; height:20px; background:black; border-radius:50%; cursor:pointer;"></div>
+          <div style="width:20px; height:20px; background:blue; border-radius:50%; cursor:pointer;"></div>
+          <div style="width:20px; height:20px; background:red; border-radius:50%; cursor:pointer;"></div>
+        </div>
+      </div>
+    </aside>
+
+
+    <main class="col-lg-9">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <span>Mostrando 1-12 productos</span>
+        <select class="form-select w-auto">
+          <option>Ordenar por: Relevancia</option>
+          <option>Precio: Menor a Mayor</option>
+          <option>Más populares</option>
+        </select>
+      </div>
+
+<div class="row g-4">
+  
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm border-0 position-relative">
+      <span class="badge bg-danger position-absolute m-2" style="top:0; left:0;">-20%</span>
+      <img src="img/smarphone.jpg" class="card-img-top" alt="Producto 1" style="height: 250px; object-fit: cover;">
+      <div class="card-body text-center">
+        <h6 class="card-title">Smartphone Samsung A20</h6>
+        <h5 class="text-primary">$14,999.00</h5>
+        <button class="btn btn-dark btn-sm">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm border-0 position-relative">
+      <span class="badge bg-primary position-absolute m-2" style="top:0; left:0;">NUEVO</span>
+      <img src="img/pantalla.jpg" class="card-img-top" alt="Producto 2" style="height: 250px; object-fit: cover;">
+      <div class="card-body text-center">
+        <h6 class="card-title">Pantalla 50" Sony</h6>
+        <h5 class="text-primary">$18,499.00</h5>
+        <button class="btn btn-dark btn-sm">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+    <script src="bootstrap.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>    
+
+
+</body>
+</html>
